@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class='bx bx-chevron-up scrolltop__icon'></i>
+    </a>
+
+    <!--header/ menu starts here -->
+    <header class="header-1" id="header">
+        <nav class="nav bd-container">
+            <a href="index.html" class="nav__logo">M!LSHAKES MKE</a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html" class="nav__link">Menu</a></li>
+                    <li class="nav__item"><a href="review.html" class="nav__link, active-link">Reviews</a></li>
+                </ul>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="bx bx-menu"></i>
+            </div>
+
+        </nav>
+    </header>
+    <!--header/menu ends here -->
+
+
+
+<main class="main-1">
+
+    <div>
+    <h2 class="header-title">Customer Reviews</h2>
+    <h3>
+        Lizette M.
+    </h3>
+    <p>
+    I Love this place!
+    </p>
+    <h3>
+        Halle
+    </h3>
+    <p>
+        They make the best Milkshakes in the country!
+    </p>
+    <h3>
+        Andrea
+    </h3>
+    <p>
+        I love their shakes and also how friendly the whole staff is!<br>
+        I would recommend this place to any one looking for great food <br>
+        and a great time!
+
+    </p>
+    </div>
+    <div class="header-menu">
+        <button id="new-button">Add Review</button>
+    </div>
+    <section id="display-content"></section>
+</main>
+
+<!-- Modal Dialog (hidden by default)-->
+<div class="modal visible" id="modal-dialog">
+    <section>
+        <h2>Name</h2>
+        <input type="text" id="edit-title-text">
+        <span id="edit-title-message"></span>
+    </section>
+    <section>
+        <h2>Review</h2>
+        <textarea id="edit-content-text" cols="38" rows="8"></textarea>
+        <span id="edit-content-message"></span>
+    </section>
+    <footer>
+        <button id="cancel-button">Cancel</button>
+        <button id="save-button">Submit</button>
+    </footer>
+</div>
+<div id="modal-dialog"></div>
+
+<footer>
+    <td colspan="5">&copy; M!LSHAKES MKE 2020</td>
+</footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+<script src="js/scripts.js"></script>
+    <script src="js/review-scripts.js"></script>
+    
+
+</body>
+
+</html>
